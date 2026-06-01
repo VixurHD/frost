@@ -8,3 +8,4 @@ frost-daemon
 build/
 *.d
 
+.envrc
