@@ -1,0 +1,10 @@
+*.o
+*.a
+*.so
+
+frost
+frost-daemon
+
+build/
+*.d
+
