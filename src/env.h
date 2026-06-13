@@ -20,8 +20,6 @@ typedef struct {
     WorkspaceMeta meta;
 } Workspace;
 
-void envGetPaths(const char *name, WorkspacePaths *paths);
-int envReadMeta(const char *path, WorkspaceMeta *meta);
-int envWriteMeta(const char *path, WorkspaceMeta *meta);
+const char* envCreateWorkspace(const char* name);
 
 #endif

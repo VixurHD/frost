@@ -3,12 +3,13 @@
 
 typedef struct {
     const char *name;
-    const char *description;
+    const char *desc;
     void (*fn)(const char*);
 } Command;
 
 extern Command commands[];
 
+void cmdUsage();
 void cmdCreate(const char *name); // Create frost-env
 void cmdPick(const char *name);   // Pick and init frost-env in saves snapshots
 void cmdSnap(const char *name);   // Save snapshot

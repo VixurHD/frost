@@ -1,7 +1,10 @@
 [en][ru](./README.ru.md)
 # frost
 > Temporary workspaces with snapshots. All the mess disappears on its own — save only what matters.
-
+```
+F        R        O  S         T
+FROST is Recovery Of Stateless Trees
+```
 ## Idea
 `frost` is a utility designed to make creating temporary tmpfs directories fast and convenient. Everything inside frost directories exists only until reboot and won't clutter your home directory with junk. Everything is saved into neat snapshots: manually or automatically — fully configurable to your needs.
 
@@ -16,7 +19,7 @@
 ~/.frost/                                    |
        ./unpacked/                           | Directory for unpacked snapshots
                ./myproject/                  | tmpfs with the unpacked snapshot
-               myproject.meta                | Metadata for the snapshot of the same name
+               ./myproject.meta              | Metadata for the snapshot of the same name
        ./snapshots/                          | Directory for stored snapshots
                  ./myproject.tar.gz          | Saved snapshot
 ```

@@ -1,7 +1,7 @@
 CC     = gcc
 CFLAGS = -Wall -Wextra -g
 
-SRC = src/main.c src/commands.c src/utils.c src/env.c
+SRC = src/main.c src/commands.c src/utils.c src/env.c src/files.c
 OBJ = $(SRC:.c=.o)
 
 all: frost

@@ -6,7 +6,12 @@
 
 int main(int argc, char *argv[]) {
 
-    frost_init();
+    frostInit();
+
+    if (argc < 2) {
+        cmdUsage();
+        return 0;
+    }
 
     const char *cmd  = argv[1];
     const char *name = argc >= 3 ? argv[2] : NULL;
@@ -17,7 +22,8 @@ int main(int argc, char *argv[]) {
             return 0;
         }
     }
+
     fprintf(stderr, "frost: unknown command '%s'\n", cmd);
 
-    return 0;
+    return 1;
 }
